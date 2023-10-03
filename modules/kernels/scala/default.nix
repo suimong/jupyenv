@@ -8,7 +8,7 @@
 }: let
   inherit (lib) types;
 
-  kernelName = "scala";
+  kernelName = "scala3";
   kernelOptions = {
     config,
     name,
@@ -22,7 +22,7 @@
       # custom arguments
       pkgs ? self.inputs.nixpkgs.legacyPackages.${system},
       name ? "scala",
-      displayName ? "Scala",
+      displayName ? "Scala3",
       requiredRuntimePackages ? [],
       runtimePackages ? [],
       scala ? pkgs.scala_3,
