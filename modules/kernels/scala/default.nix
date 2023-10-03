@@ -36,7 +36,7 @@
 
       almondSh = let
         baseName = "almond";
-        version = "0.13.1";
+        version = "0.13.14";
         scalaVersion = scala.version;
         deps = stdenv.mkDerivation {
           name = "${baseName}-deps-${version}";
