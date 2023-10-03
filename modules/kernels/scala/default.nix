@@ -25,7 +25,7 @@
       displayName ? "Scala",
       requiredRuntimePackages ? [],
       runtimePackages ? [],
-      scala ? pkgs.scala,
+      scala ? pkgs.scala_3,
       coursier ? pkgs.coursier,
       jdk ? pkgs.jdk,
       jre ? pkgs.jre,
@@ -111,7 +111,7 @@
       {
         scala = lib.mkOption {
           type = types.package;
-          default = config.nixpkgs.scala;
+          default = config.nixpkgs.scala_3;
           example = lib.literalExpression "pkgs.scala";
           description = lib.mdDoc ''
             Scala package to use with almond.
