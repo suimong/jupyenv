@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  kernel.scala.minimal = {
+  kernel.scala3.minimal = {
     enable = true;
   };
 }
