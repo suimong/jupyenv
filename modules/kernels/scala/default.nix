@@ -44,7 +44,7 @@
 
           buildCommand = ''
             export COURSIER_CACHE=$(pwd)
-            export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7890 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7890 "
+            # export JAVA_OPTS="$JAVA_OPTS -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7890 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7890 "
             ${coursier}/bin/cs fetch -r jitpack sh.almond:scala-kernel_${scalaVersion}:${version} > deps
             mkdir -p $out/share/java
             cp $(< deps) $out/share/java/
