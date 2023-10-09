@@ -31,7 +31,7 @@ The following snippet will create a new project directory, initialize the projec
 ```shell
 mkdir my-project
 cd my-project
-nix flake init --template github:tweag/jupyenv
+nix flake init --template github:suimong/jupyenv
 nix run
 ```
 
